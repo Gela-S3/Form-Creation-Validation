@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() { // Changed to 'function()'
     // Form Selection
     const form = document.getElementById('registration-form');
     // Feedback Division Selection
     const feedbackDiv = document.getElementById('form-feedback');
 
     // Form Submission Event Listener
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', function(event) { // Changed to 'function(event)'
         event.preventDefault(); // Prevent default form submission
 
         // Input Retrieval and Trimming
